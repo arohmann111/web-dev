@@ -9,6 +9,10 @@ body {
     /* #241825 */
 }
 
+.navbar-header {
+    margin: 5%;
+}
+
 #header-nav {
     background-color: #a45a2e;
     border-radius: 0;
@@ -19,7 +23,7 @@ body {
     background: url(../images/logo-xs.svg) no-repeat;
     width: 150px;
     height: 150px;
-    margin: 10px 15px 10px 0;
+    margin: 10px 20px 10px 0;
 }
 
 .pull-left {
@@ -54,4 +58,9 @@ body {
 .navbar-brand p span {
     vertical-align: middle;
     font-size: large;
+}
+
+.navbar-toggler {
+    margin-right: 2%;
+    float: right;
 }
