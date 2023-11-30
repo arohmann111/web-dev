@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428.86 428.86">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #02496d;
+        stroke-miterlimit: 10;
+        stroke-width: 19px;
+      }
+
+      .cls-3 {
+        fill: #02496d;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g>
+      <text class="cls-3" transform="translate(74.04 227.88)"><tspan x="0" y="0">BUN&amp;</tspan><tspan class="cls-1" x="128.23" y="0">C</tspan><tspan x="155.87" y="0">OFFEE</tspan></text>
+      <rect class="cls-2" x="9.5" y="9.5" width="409.86" height="409.86"/>
+    </g>
+  </g>
+</svg>
