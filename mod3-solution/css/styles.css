@@ -4,9 +4,11 @@ body {
   background-color: #02496d;
   font-family: 'Oxygen', sans-serif;
 }
-.container {
-  width: 100%;
+
+.scrollable-content::-webkit-scrollbar {
+  display: none;
 }
+
 /** HEADER **/
 #header-nav {
   background-color: lightcoral;
@@ -14,52 +16,110 @@ body {
   border: 0;
 }
 .navbar-brand {
-  padding-top: 15px;
+  padding-top: 20px;
 }
-.navbar-brand h1 { /* brand name */
+.navbar-brand h1 {
   color: #fff;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 3px 1px #02496d;
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
   text-decoration: none;
 }
 
-.item {
-  margin-top: 20px;
-  background-color: lightcoral;
+.navbar-default .navbar-collapse {
+  border-color: #02496d;
 }
 
-.menu {
-  float: right;
-  width: 10%;
-  background-color: lightpink;
-  text-align: center;
+.navbar-collapse {
+  padding: 0;
 }
 
-.menu open {
-  float: right;
-}
-
-.dropdown-menu {
+#menu {
   margin-top: 10px;
 }
-.dropdown-menu a {
-  color: #951C49;
+
+#menu ul {
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
   text-align: center;
-}
-.dropdown-menu a:hover {
-  background: #E7E7E7;
-}
-.dropdown-menu a span {
-  font-size: 1.8em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
-/* .menu a:link a:visited a:hover a:active{
-  text-decoration: none !important;
-} */
+#menu a {
+  color: rgba(255, 210, 210, 1);
+  text-align: center;
+}
+
+#menu li {
+  border: 1px solid #02496d;
+}
+
+#menu li:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#menu a span {
+  font-size: 1.2em;
+}
+
+.navbar-header button.navbar-toggle.collapsed {
+  clear: both;
+  margin-top: -40px;
+}
+.collapsed {
+  color: #02496d;
+  background-color: rgba(3, 73, 109, 0.2);
+}
+
+.navbar-toggle {
+  margin-top: 10px;
+}
+
+/** BODY **/
+.content {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 2000px;
+  align-items: center;
+}
+
+.menu-text {
+  color: rgba(240, 128, 128, 0.6);
+  font-size: 1.5em;
+  line-height: 20px;
+  font-weight: bolder;
+}
+
+.menu-tile {
+  position: relative;
+  width: 80%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  float: none;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px lightcoral;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-tile a {
+  color: lightcoral;
+  font-size: 1.2em;
+}
